@@ -4,30 +4,34 @@
     :cell-class-name="cellClassN"
     :data="tableData"
     height="cacl(100vh - 4rem)"
+    fit
+    size="medium"
   >
-    <el-table-column align="center" prop="clientid" label="ID" width="180"></el-table-column>
-    <el-table-column align="center" prop="clientname" label="NAME"></el-table-column>
-    <el-table-column align="center" prop="address" label="ADDRESS">
+    <el-table-column align="center" prop="status" label="STATUS" width="90">
       <template slot-scope="scope">
-        <i style="font-size: 24px" class="el-icon-location"></i>
-      </template>
-    </el-table-column>
-    <el-table-column align="center" prop="productid" label="PHONE"></el-table-column>
-    <el-table-column align="center" prop="type" label="TARIF"></el-table-column>
-    <!-- <el-table-column align="center" prop="status" label="STATUS">
-      <template slot-scope="scope">
-        <el-button size="small">{{ scope.row.status}}</el-button>
-      </template>
-    </el-table-column>-->
-    <el-table-column align="center" width="120" prop="actions">
-      <template slot-scope="scope">
-        <div class="check-del">
-          <div class="check"><i class="el-icon-check"></i> </div>
-          <div class="del"><i class="el-icon-delete"></i> </div>
+        <div>
+          <i style="color: orange; font-size: 2rem" class="el-icon-star-on"></i>
         </div>
       </template>
     </el-table-column>
-    <!-- <el-table-column width=15 style="border: none !important" prop="islast"  class="last-cell"></el-table-column> -->
+    <el-table-column align="center" prop="id" label="ID" width="180"></el-table-column>
+    <el-table-column prop="name" label="NAME"></el-table-column>
+    <el-table-column align="" prop="phone" label="PHONE">
+      <template slot-scope="scope">
+        <div class="phones">
+          <div><i class="el-icon-phone"></i> {{ scope.row.phone.phone_1}}<br>
+          <img style="margin: 0" src="@/assets/mobile_phone.svg" > {{ scope.row.phone.phone_2}}</div>
+        </div>
+      </template>
+    </el-table-column>
+    <el-table-column  prop="address" label="ADDRESS" ></el-table-column>
+    <el-table-column align="center" prop="map" label="MAP"  width="180">
+      <template slot-scope="scope">
+        <div class="">
+          <img src="@/assets/map.svg" alt="" srcset="">
+        </div>
+      </template>
+    </el-table-column>
   </el-table>
 </template>
 
@@ -37,34 +41,15 @@ export default {
     return {
       tableData: [
         {
-          actions: {
-            phone: 1,
-            chat: 1,
+          status: "start",
+          name: "Hamdamboyev Hudoyberdi",
+          id: "100174",
+          phone: {
+            phone_1: '+998 99 999 99 99',
+            phone_2: '+998 99 999 99 99',
           },
-          orderid: "#100174",
-          clientid: "001007",
-          clientname: "Tom",
-          address: "loc",
-          productid: "#100174/1",
-          type: "Gilam",
-          status: "In the drive",
-          status_color: "red",
-          islast: true,
-        },
-        {
-          actions: {
-            phone: 1,
-            chat: 0,
-          },
-          orderid: "#100174",
-          clientid: "001007",
-          clientname: "Tom",
-          address: "loc",
-          productid: "#100174/1",
-          type: "Gilam",
-          status: "In the drive",
-          status_color: "blue",
-          islast: true,
+          address: "Mirobod tumani, ********* mahalla, ******* ko'chasi, 76-dom, 42-xonadon",
+          map: 'map'
         },
       ],
     };
@@ -102,6 +87,12 @@ export default {
   /* position: relative ; */
   /* z-index: 1000; */
 }
+.phones {
+  /* background-color:red; */
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+}
 
 .check-del {
   position: absolute;
@@ -120,10 +111,10 @@ export default {
   border-style: solid;
   border-color: rgb(212, 212, 212);
   border-top-width: 0px;
-  border-left-width: 1px;
+  border-left-width: 0px;
   border-right-width: 1px;
   border-bottom-width: 0px;
-  /* background-color: rgb(215, 235, 215); */
+  background-color: rgb(215, 235, 215);
 }
 
 .del {
@@ -131,7 +122,7 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* background-color: rgb(250, 226, 226); */
+  background-color: rgb(250, 226, 226);
 
 }
 
