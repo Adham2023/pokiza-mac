@@ -24,8 +24,8 @@ export default {
   .chat-body {
     height: 100%;
     display: grid;
-    grid-column-gap: 2rem;
-    grid-template-columns: [list-start] 50% [list-end chat-start] 50% [chat-end];
+    grid-gap: 2rem;
+    grid-template-columns: [list-start] 1fr [list-end chat-start] 1fr [chat-end];
     grid-template-rows: [rs] 1fr [re];
   }
 
@@ -38,7 +38,6 @@ export default {
   }
 
   .the-chat {
-
     height: 100%;
     background-color: #fff;
     grid-column-start: chat-start;

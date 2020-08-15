@@ -41,7 +41,7 @@ export default {
 
 .aside {
   background-color: #404A59;
-  font-family: 'proxima_nova_rgregular';
+  font-family: 'Proxima Nova';
   display: flex;
   flex-flow: column;
 }

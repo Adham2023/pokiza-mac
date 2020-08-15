@@ -323,10 +323,11 @@ export default {};
 
 .ch-list {
   background-color: #fff;
+  width: 40rem;
   display: flex;
   flex-flow: column;
   border-radius: 8px;
-  padding: 2rem 0 0 0;
+  padding: 2rem; /* 0 0 0; */
   -webkit-box-shadow: -1px 2px 16px -5px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: -1px 2px 16px -5px rgba(0, 0, 0, 0.75);
   box-shadow: -1px 2px 16px -5px rgba(0, 0, 0, 0.75);
@@ -338,7 +339,7 @@ export default {};
   justify-content: space-between;
   align-items: center;
   height: 6rem;
-  padding: 0 2rem;
+  /* padding: 0 2rem; */
 }
 .ch-list-title > .title {
   font-size: 2rem;
@@ -346,13 +347,14 @@ export default {};
 
 .teams-list {
   height: 8.2rem;
+  width: auto;
   overflow: scroll;
   display: flex;
   flex-wrap: nowrap;
   overflow-x: auto;
   align-items: center;
-  margin: 0 2rem;
-  padding: 1rem;
+  /* margin: 0 2rem; */
+  /* padding: 1rem; */
 }
 
 .teams-list-item {
@@ -363,7 +365,7 @@ export default {};
   flex-flow: column;
   align-items: center;
   justify-content: space-around;
-  margin-right: 1.5rem;
+  /* margin-right: 1.5rem; */
 }
 
 .avatar {
@@ -382,7 +384,7 @@ export default {};
   display: flex;
   align-items: center;
   /* margin: 0 2rem; */
-  padding: 0 2rem;
+  /* padding: 0 2rem; */
 }
 
 .my-chats-title {

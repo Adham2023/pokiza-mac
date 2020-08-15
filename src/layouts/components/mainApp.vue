@@ -13,7 +13,7 @@ export default {
 <style scoped>
 /* bu main pagela durodon yer pageni o'zi amas */
     .main  {
-        padding: 2em;
+        padding: 2rem;
         overflow-y: scroll;
         overflow-x: hidden;
         display: flex;

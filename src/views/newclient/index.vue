@@ -9,7 +9,7 @@
         </label>
         <label class="lbl">
           Phone Number
-          <input type="text" />
+          <input type="text" placeholder="+998 (99) 999-99-99" />
         </label>
         <label class="lbl">
           Second Number
@@ -41,7 +41,7 @@
           </el-select>
         </label>
         <label class="lbl">
-          Second Number
+          Address (Waymark)
           <input type="text" />
         </label>
         <div class="btns">
