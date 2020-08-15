@@ -1,0 +1,21 @@
+{
+  "message": "Salom i18n !!",
+  "logoText":{
+    "tashkent": "Toshkent",
+    "branch": "filiali"
+  },
+  "sidenav": {
+    "Orders": "Buyurtmalar",
+    "Moderator": "O'zgartiruvchi",
+    "Transport": "Transport",
+    "Contacts": "Aloqalar",
+    "Newclient": "Yangi mijoz",
+    "Notifications": "Ogohlantirishlar",
+    "Statistics": "Statistikalar",
+    "Settings": "Sozlamalar",
+    "Help": "Yordam"
+  },
+  "sidenav_info": {
+    "short_info": "Qisqa raqam"
+  }
+}

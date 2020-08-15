@@ -11,7 +11,7 @@
         <div class="phone">
           <img src="@/assets/call.svg" >
           <span class="short-num">1221</span>
-          <span>short number</span>
+          <span>{{$t('sidenav_info.short_info')}}</span>
         </div>
         <br>
         <div class="mobile-phone">

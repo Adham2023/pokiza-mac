@@ -1,6 +1,6 @@
 "use strict";
 
-var _interopRequireDefault = require("/Users/adham/Documents/vue/utg-abonent_v2/node_modules/@babel/runtime/helpers/interopRequireDefault");
+var _interopRequireDefault = require("/Users/adham/Documents/vue/pokiza/node_modules/@babel/runtime/helpers/interopRequireDefault");
 
 require("core-js/modules/es.object.to-string");
 
@@ -9,7 +9,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var _interopRequireWildcard2 = _interopRequireDefault(require("/Users/adham/Documents/vue/utg-abonent_v2/node_modules/@babel/runtime/helpers/esm/interopRequireWildcard"));
+var _interopRequireWildcard2 = _interopRequireDefault(require("/Users/adham/Documents/vue/pokiza/node_modules/@babel/runtime/helpers/esm/interopRequireWildcard"));
 
 var _vue = _interopRequireDefault(require("vue"));
 
@@ -17,10 +17,15 @@ var _vueRouter = _interopRequireDefault(require("vue-router"));
 
 var _icons = require("./icons");
 
+var _i18n = _interopRequireDefault(require("../i18n"));
+
 _vue.default.use(_vueRouter.default);
 
 var routes = [{
-  path: '/',
+  path: '',
+  redirect: "/".concat(_i18n.default.locale)
+}, {
+  path: '/:lang',
   component: function component() {
     return Promise.resolve().then(function () {
       return (0, _interopRequireWildcard2.default)(require('@/layouts/index'));
@@ -128,7 +133,7 @@ var routes = [{
   }]
 }, {
   path: '/login',
-  Name: "Login",
+  name: "Login",
   component: function component() {
     return Promise.resolve().then(function () {
       return (0, _interopRequireWildcard2.default)(require('@/layouts/login'));

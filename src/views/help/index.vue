@@ -1,5 +1,5 @@
 <template>
-  <h3>Help</h3>
+  <h3>{{$t('message')}}</h3>
 </template>
 
 <script>

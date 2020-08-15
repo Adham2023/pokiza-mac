@@ -1,0 +1,21 @@
+{
+    "message": "Privet i18n !!",
+    "logoText":{
+      "tashkent": "Ташкент",
+      "branch": "филиал"
+    },
+    "sidenav": {
+      "Orders": "Заказы",
+      "Moderator": "Модератор",
+      "Transport": "Транспорт",
+      "Contacts": "Контакты",
+      "Newclient": "Новый клиент",
+      "Notifications": "Уведомления",
+      "Statistics": "Статистика",
+      "Settings": "Настройки",
+      "Help": "Помощ"
+    },
+    "sidenav_info": {
+      "short_info": "Короткий номер"
+    }
+  }

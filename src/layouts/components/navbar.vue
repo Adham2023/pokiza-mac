@@ -5,6 +5,9 @@
       <input class="custom-input" type="search" placeholder="Search information, deal or help" />
     </div>
     <div class="other-things">
+      <div class="locale">
+        <changeLocale />
+      </div>
       <div class="time-date">
         <h1 style="font-size: 18px">16:43</h1>
         <span style="margin-left: 1rem; font-size: 16px">April 20</span>
@@ -21,11 +24,18 @@
 </template>
 
 <script>
-export default {};
+import changeLocale from '@/components/changeLocale'
+export default {
+  components: {
+    changeLocale
+  }
+};
 </script>
 
 <style>
-
+.locale {
+  margin:0 1.5rem;
+}
 .time-date {
   display: flex;
   align-items: center;

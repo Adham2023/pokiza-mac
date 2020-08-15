@@ -1,0 +1,21 @@
+{
+    "message": "Salom i18n !!",
+    "logoText":{
+      "tashkent": "Tashkent",
+      "branch": "branch"
+    },
+    "sidenav": {
+      "Orders": "Orders",
+      "Moderator": "Moderator",
+      "Transport": "Transport",
+      "Contacts": "Contacts",
+      "Newclient": "Newclient",
+      "Notifications": "Notifications",
+      "Statistics": "Statistics",
+      "Settings": "Settings",
+      "Help": "Help"
+    },
+    "sidenav_info": {
+      "short_info": "Short number"
+    }
+  }
